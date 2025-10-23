@@ -1,0 +1,90 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8); 
+    z-index: 1000;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column; 
+    }
+  
+    nav a {
+      margin: 10px 0; 
+      padding: 10px; 
+    }
+  }
+  
+  h1, h2, h3, p {
+    font-size: 2rem; 
+  }
+  
+  
+  @media (max-width: 768px) {
+    h1, h2, h3, p {
+      font-size: 1.5rem; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1, h2, h3, p {
+      font-size: 1.2rem; 
+    }
+  }
+  
+  section {
+    height: 100vh; 
+    padding: 20px;
+    box-sizing: border-box; 
+  }
+  
+  img {
+    width: 100%;
+    height: auto; 
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  section {
+    scroll-snap-align: start; 
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  body {
+    scroll-snap-type: y mandatory; 
+  }
+  
+  nav a.active {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    nav a.active {
+      text-decoration: underline dotted; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    section {
+      padding: 15px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 0.9rem; 
+    }
+  
+    section {
+      padding: 10px; 
+    }
+  }
+  
